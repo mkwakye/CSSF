@@ -13,6 +13,18 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 1em 0;
 }
 
+.title {
+    font-size: 3.75rem;
+    line-height: 1;
+    width: auto;
+    padding: 3rem 2rem;
+}
+
+.header {
+    font-size: medium;
+    padding: 3rem;
+}
+
 .banner {
     background: rgb(255, 255, 255);
     width: 100%;
@@ -70,16 +82,6 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
-.title {
-    width: auto;
-    padding-bottom: 30px;
-}
-
-.header {
-    font-size: medium;
-    padding: 3rem;
-}
-
 .carousel {
     background: #EEE;
   }
@@ -116,6 +118,14 @@ h1, h2, h3, h4, h5, h6 {
     .columns {
         width: 100%;
     }
+
+    .title {
+        font-size: 3rem;
+        line-height: 1;
+        width: auto;
+        padding: 3rem 2rem;
+    }
+    
 }
 
 @media screen and (max-width: 980px) {
@@ -124,6 +134,14 @@ h1, h2, h3, h4, h5, h6 {
         width: 75%;
     }
 
+    .title {
+        font-size: 3rem;
+        line-height: 1;
+        width: auto;
+        padding: 3rem 2rem;
+    }
+    
+
 }
 
 @media screen and (max-width: 480px) {
@@ -131,5 +149,13 @@ h1, h2, h3, h4, h5, h6 {
     #footer .inner {
         width: 90%;
     }
+
+    .title {
+        font-size: 2.25rem; /* 36px */
+        line-height: 2.5rem; /* 40px */
+        width: auto;
+        padding: 3rem 2rem;
+    }
+    
 
 }
