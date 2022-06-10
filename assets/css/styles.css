@@ -7,10 +7,87 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-weight: 400;
     line-height: 1.5;
     margin: 0 0 1em 0;
+}
+
+details, summary {
+	margin-bottom: 0 !important;
+}
+details summary::-webkit-details-marker {
+	display: none;
+}
+details summary {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 1rem 1.5rem;
+	outline: none;
+	cursor: pointer;
+	font-size: 1.35rem;
+	font-weight: 400;
+	line-height: 1.2;
+	border-bottom: 1px solid #000;
+}
+details[open] summary {
+	background: rgb(220, 20, 60);
+	color: #fff;
+}
+
+details summary:before {
+    content:"\21E3"; 
+	padding-right: 1.5rem;
+}
+details[open] summary:before {
+	content:"\21E1";
+}
+details[open] {
+	border-bottom: 1px solid #000;
+}
+details > div {
+	padding: 1.5rem 1.5rem .5rem;
+	background: #f2f2f2;
+}
+details > div > * {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+details.scholarshipinfo summary:before,
+details.scholarshipinfo[open] summary:before {
+	display: none;
+}
+
+details.scholarshipinfo summary {
+	justify-content: space-between;
+}
+details.scholarshipinfo summary:after {
+	content:"\21E3";
+}
+details.scholarshipinfo[open] summary:after {
+	content:"\21E1";
+}
+
+details.scholarshipinfo > div {
+	display: flex;
+	flex-wrap: wrap;
+	overflow: auto;
+}
+details.scholarshipinfo > div > a {
+	width: 25%;
+}
+details.scholarshipinfo > div > a > img {
+	width: 100%;
+}
+details.scholarshipinfo > div > div {
+	flex: 1;
+	margin: 0;
+	padding-left: 1.5rem;
+}
+details.scholarshipinfo > div > div p {
+	margin: 0 0 1rem 0;
 }
 
 .title {
@@ -18,11 +95,23 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1;
     width: auto;
     padding: 3rem 2rem;
+    color: rgb(220 38 38);
 }
 
 .header {
     font-size: medium;
-    padding: 3rem;
+    padding: 2rem 3rem;
+}
+
+.content {
+    font-size: medium;
+    padding: 1rem 3rem;
+}
+
+.content ul li {
+    list-style:square;
+    display:list-item;
+    position: relative;
 }
 
 .banner {
@@ -63,7 +152,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar ul li a.active {
-    color: crimson;
+    color: rgb(220, 20, 60);
     font-weight: bold;
   }
 
@@ -71,7 +160,7 @@ h1, h2, h3, h4, h5, h6 {
     content: "";
     height: 3px;
     width: 0;
-    background: crimson;
+    background: rgb(220, 20, 60);
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -83,7 +172,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .carousel {
-    background: #EEE;
+    background: rgb(238, 238, 238);
   }
   
 .carousel img {
@@ -93,7 +182,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #footer {
     padding: 4em 0 2em 0;
-    background-color: #1b1b1f;
+    background-color: rgb(27, 27, 31);
     text-align: center;
 }
 
@@ -109,14 +198,12 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
     text-align: center;
 }
+
+
   
 @media screen and ( min-width: 768px ) {
     .carousel img {
         height: 400px;
-    }
-
-    .columns {
-        width: 100%;
     }
 
     .title {
@@ -151,11 +238,22 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .title {
-        font-size: 2.25rem; /* 36px */
-        line-height: 2.5rem; /* 40px */
+        font-size: 2.25rem;
+        line-height: 2.5rem;
         width: auto;
         padding: 3rem 2rem;
     }
-    
+}
 
+@media (max-width:600px) {
+	details summary {
+		font-size: 1.5rem;
+	}
+	details.scholarshipinfo > div > a {
+		width: 100%;
+	}
+	details.scholarshipinfo > div > div {
+		padding: 0;
+		padding-top: .5rem;
+	}
 }
