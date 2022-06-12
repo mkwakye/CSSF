@@ -13,6 +13,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 1em 0;
 }
 
+p.indent {
+    text-indent: 30px;
+}
+
 details, summary {
 	margin-bottom: 0 !important;
 }
@@ -200,7 +204,6 @@ details.scholarshipinfo > div > div p {
 }
 
 
-  
 @media screen and ( min-width: 768px ) {
     .carousel img {
         height: 400px;
@@ -212,7 +215,6 @@ details.scholarshipinfo > div > div p {
         width: auto;
         padding: 3rem 2rem;
     }
-    
 }
 
 @media screen and (max-width: 980px) {
@@ -227,8 +229,6 @@ details.scholarshipinfo > div > div p {
         width: auto;
         padding: 3rem 2rem;
     }
-    
-
 }
 
 @media screen and (max-width: 480px) {
@@ -256,4 +256,7 @@ details.scholarshipinfo > div > div p {
 		padding: 0;
 		padding-top: .5rem;
 	}
+    .banner .navbar ul { /* COME BACK AND FINISH IMPLEMENTATION */
+        display: none;
+    }
 }
