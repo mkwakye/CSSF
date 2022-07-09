@@ -1,7 +1,7 @@
 * {
     margin: 0%;
     padding: 0%;
-    font-family: "Montserrat", Times, serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 2vh;
     box-sizing: border-box;
 }
@@ -28,11 +28,18 @@
     height: 200px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, a, span {
     color: rgb(255, 255, 255);
     font-weight: 400;
+    font-size: 2vh;
+    font-family: 'Montserrat', sans-serif;
     line-height: 0.3vh.5;
     margin: 0 0 1em 0;
+}
+
+p {
+    font-size: 2vh;
+    font-family: 'Montserrat', sans-serif;
 }
 
 p.indent {
@@ -41,6 +48,8 @@ p.indent {
 
 .title {
     font-size: 8vw;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
     line-height: 8vh;
     width: auto;
     padding: 4vh 3vh;
@@ -50,6 +59,8 @@ p.indent {
 
 section .title {
     font-size: 15vw;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
     line-height: 8vh;
     width: auto;
     padding: 3vh 2vh;
@@ -59,11 +70,13 @@ section .title {
 
 .header {
     font-size: 2vh;
+    font-family: 'Montserrat', sans-serif;
     padding: 2vh 3vh;
 }
 
 .content {
     font-size: 3vh;
+    font-family: 'Montserrat', sans-serif;
     padding: 1vh 3vh;
 }
 
@@ -163,13 +176,16 @@ section .title {
 
 .open .mobile-menu {
   display: flex;
-  position: relative;
-  z-index:-1;
+  position: absolute;
+  z-index: 1;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  top:0;
   left:0;
   background-color: rgb(220, 20, 60);
+  font-weight: bold;
+  color: white;
   opacity: 0.95;
 }
 
@@ -178,12 +194,13 @@ section .title {
   position: absolute;
   top: 10px;
   left: 30px;
-  height: 50%;
+  height: 65%;
   width: 100%;
 }
 
 .mobile-menu li {
   margin-bottom: 10px;
+  padding-top: 10px;
 }
 
 .icon {
@@ -207,6 +224,7 @@ details summary {
 	outline: none;
 	cursor: pointer;
 	font-size: 3vh;
+    font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	line-height: 0.3vh.2;
 	border-bottom: 1px solid #000;
@@ -554,13 +572,14 @@ button.style3:active,
     * {
         margin: 0%;
         padding: 0%;
-        font-family: "Montserrat", Times, serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 2vh;
         box-sizing: border-box;
     }
 
     .title {
         font-size: 5vh;
+        font-weight: bold;
         line-height: 5vh;
         width: auto;
         padding: 5vh 4vh;
@@ -576,6 +595,7 @@ button.style3:active,
 
     .title {
         font-size: 5vh;
+        font-weight: bold;
         line-height: 5vh;
         width: auto;
         padding: 5vh 4vh;
@@ -590,7 +610,7 @@ button.style3:active,
     input[type="button"],
     button,
     .button {
-        padding: 0;
+        padding: 0 1.5em;
     }
 
 }
@@ -611,19 +631,20 @@ button.style3:active,
 
 }
 
-/* WIDTH: 400PX TO 600PX */
+/* HEIGHT: 400PX TO 600PX */
 
 @media (min-height:400px) and (max-height:600px) {
     * {
         margin: 0%;
         padding: 0%;
-        font-family: "Montserrat", Times, serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 3vh;
         box-sizing: border-box;
     }
 
     .title {
         font-size: 5vh;
+        font-weight: bold;
         line-height: 5vh;
         width: auto;
         padding: 5vh 4vh;
@@ -653,6 +674,7 @@ button.style3:active,
 
     .title {
         font-size: 5vh;
+        font-weight: bold;
         line-height: 5vh;
         width: auto;
         padding: 5vh 4vh;
@@ -698,6 +720,14 @@ button.style3:active,
       }
 }
 
+@media screen and (max-width: 901px) {
+
+    .thumbnails .box {
+        width: 85%;
+    }
+
+}
+
 /* WIDTH: 900PX */
 
 @media screen and (max-width: 980px) {
@@ -708,6 +738,7 @@ button.style3:active,
 
     .title {
         font-size: 5vh;
+        font-weight: bold;
         line-height: 5vh;
         width: auto;
         padding: 5vh 4vh;
@@ -721,13 +752,13 @@ button.style3:active,
     * {
         margin: 0%;
         padding: 0%;
-        font-family: "Montserrat", Times, serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 1.5vh;
         box-sizing: border-box;
     }
 }
 
-@media screen and (max-width: 1280px) {
+@media (min-width: 900px) and (max-width: 1280px) {
 
     .thumbnails .box {
         width: 45%;
